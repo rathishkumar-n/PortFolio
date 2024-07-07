@@ -1,0 +1,146 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Reset some basic elements */
+body, h1, h2, h3, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+/* Apply font and background styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 0.5rem;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+header nav ul li a {
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #d3d3d3;
+}
+
+.container {
+    width: 80%;
+    margin: 2rem auto;
+    padding: 1rem;
+    background: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+#name{
+    color: black;
+}
+.nav-ul li>a{
+    color: black;
+}
+
+.profile-content {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.profile-photo img {
+    /* border-radius: 50%; */
+    width: 200px;
+    height: 200px;
+    object-fit:contain;
+    transition: transform 0.3s ease;
+    
+    
+}
+
+.profile-photo img:hover {
+    transform: scale(1.1);
+}
+
+.profile-content h2 {
+    margin-bottom: 1rem;
+}
+
+.profile-content p {
+    line-height: 1.6;
+}
+
+.skills-list, .certifications-list, .courses-list {
+    columns: 2;
+    column-gap: 2rem;
+}
+
+.skills-list li, .certifications-list li, .courses-list li {
+    margin-bottom: 0.5rem;
+    padding-left: 0.5rem;
+    position: relative;
+}
+
+.skills-list li::before, .certifications-list li::before, .courses-list li::before {
+    content: '•';
+    color: #4CAF50;
+    position: absolute;
+    left: -0.5rem;
+}
+
+h2 {
+    border-left: 4px solid #4CAF50;
+    padding-left: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.job, .education-item {
+    margin-bottom: 1.5rem;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #333;
+    color: white;
+}
+
+footer a {
+    color: #4CAF50;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #d3d3d3;
+}
+
+/* Smooth Scroll */
+html {
+    scroll-behavior: smooth;
+}
+#contact{
+    color: black;
+}
+.container p{
+    color: black;
+}
+.container a{
+    color: black;
+}
+
